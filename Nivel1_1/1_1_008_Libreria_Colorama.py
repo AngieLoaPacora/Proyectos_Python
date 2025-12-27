@@ -24,11 +24,15 @@ def ejemplo_uso_colorama():
 
 
 def menu_opciones():
+    icono_opcion_1 = "\U0001F4C8" #Gráfico de barras (📊)
+    icono_opcion_2 = "\U0001F4B0" #Bolsa de dinero (💰)
+    icono_opcion_3 = "\U0001F4DA" #Libros(📖 )
+
     borde_superior = f"{Fore.YELLOW}{Back.BLUE}+" + " -" * 30 + "+"
     opciones = [
-        f"{Fore.CYAN}{Back.BLACK} | 1. Opción 1         |",
-        f"{Fore.CYAN}{Back.BLACK} | 2. Opción 2         |",
-        f"{Fore.CYAN}{Back.BLACK} | 3. Opción 3         |",
+        f"{Fore.CYAN}{Back.BLACK} | 1. Opción 1    {icono_opcion_1.strip()}     |",
+        f"{Fore.CYAN}{Back.BLACK} | 2. Opción 2    {icono_opcion_2.strip()}     |",
+        f"{Fore.CYAN}{Back.BLACK} | 3. Opción 3    {icono_opcion_3.strip()}     |",
     ]
     borde_inferior = f"{Fore.YELLOW}{Back.BLUE}+" + " -" * 30 + "+"
     print(borde_superior)
